@@ -1,6 +1,6 @@
 {
   "name": "react-use-toggle",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.0",
   "description": "React hook for toggle state.",
   "repository": "git@github.com:bsonntag/react-use-toggle.git",
   "license": "MIT",
