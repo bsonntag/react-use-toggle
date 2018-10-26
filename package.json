@@ -1,0 +1,25 @@
+{
+  "name": "react-use-toggle",
+  "version": "0.0.0",
+  "description": "React hook for toggle state.",
+  "license": "MIT",
+  "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "bundle": "rm -rf dist && babel src --out-dir dist --ignore *.test.js",
+    "bundle:watch": "babel src --out-dir dist --watch",
+    "lint": "eslint src",
+    "version": "npm run bundle && git add dist"
+  },
+  "dependencies": {
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.7.0",
+    "eslint-config-seegno": "^11.0.1"
+  }
+}
