@@ -2,6 +2,7 @@
   "name": "react-use-toggle",
   "version": "0.0.0",
   "description": "React hook for toggle state.",
+  "repository": "git@github.com:bsonntag/react-use-toggle.git",
   "license": "MIT",
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "main": "dist/index.js",
