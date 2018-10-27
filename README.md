@@ -1,5 +1,7 @@
 # react-use-toggle
 
+[![CircleCI](https://circleci.com/gh/bsonntag/react-use-toggle.svg?style=svg)](https://circleci.com/gh/bsonntag/react-use-toggle)
+
 React hook for toggle state.
 
 ## Usage
