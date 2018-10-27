@@ -22,6 +22,9 @@
       "lcov",
       "text"
     ],
+    "coveragePathIgnorePatterns": [
+      "jest-setup.js"
+    ],
     "setupTestFrameworkScriptFile": "./jest-setup.js"
   },
   "devDependencies": {
