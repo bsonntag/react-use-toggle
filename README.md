@@ -5,6 +5,28 @@
 
 React hook for toggle state.
 
+## Installation
+
+Using npm:
+
+```sh
+$ npm install --save react-use-toggle
+```
+
+Using yarn:
+
+```sh
+$ yarn add react-use-toggle
+```
+
+This module uses React's upcoming hooks feature.
+To try this out you'll also need to install the 16.7.0-alpha.0 version
+of `react` and `react-dom`:
+
+```sh
+$ yarn add react@16.7.0-alpha.0 react-dom@16.7.0-alpha.0
+```
+
 ## Usage
 
 ```js
@@ -27,6 +49,15 @@ function Example() {
   );
 }
 ```
+
+## API
+
+```js
+useToggle(initialState?: boolean): [boolean, () => void]
+```
+
+Receives an optional initial state and returns a tuple with the current state
+and a function to toggle the state.
 
 ## Contributing
 
