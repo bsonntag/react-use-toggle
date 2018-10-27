@@ -2,6 +2,11 @@
   "name": "react-use-toggle",
   "version": "0.0.0-alpha.0",
   "description": "React hook for toggle state.",
+  "keywords": [
+    "hooks",
+    "react",
+    "toggle"
+  ],
   "repository": "git@github.com:bsonntag/react-use-toggle.git",
   "license": "MIT",
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
@@ -18,13 +23,13 @@
   },
   "jest": {
     "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "jest-setup.js"
+    ],
     "coverageReporters": [
       "html",
       "lcov",
       "text"
-    ],
-    "coveragePathIgnorePatterns": [
-      "jest-setup.js"
     ],
     "setupTestFrameworkScriptFile": "./jest-setup.js"
   },
