@@ -7,11 +7,22 @@
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "main": "dist/index.js",
   "scripts": {
-    "bundle": "rm -rf dist && babel src --out-dir dist --ignore *.test.js",
-    "bundle:watch": "babel src --out-dir dist --watch",
+    "bundle": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js",
+    "bundle:watch": "babel src --out-dir dist --watch --ignore **/*.test.js",
     "example": "parcel --out-dir build example/index.html",
     "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watch --notify",
     "version": "npm run bundle && git add dist"
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "html",
+      "lcov",
+      "text"
+    ],
+    "setupTestFrameworkScriptFile": "./jest-setup.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
