@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _react = require("react");
 
@@ -23,14 +23,13 @@ function useToggle() {
       state = _useState2[0],
       setState = _useState2[1];
 
-  var toggle = function toggle() {
+  var toggle = (0, _react.useCallback)(function () {
     return setState(function (state) {
       return !state;
     });
-  };
-
+  }, []);
   return [state, toggle];
 }
 
 var _default = useToggle;
-exports.default = _default;
+exports["default"] = _default;
