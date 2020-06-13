@@ -1,7 +1,6 @@
 # react-use-toggle
 
 [![CircleCI](https://circleci.com/gh/bsonntag/react-use-toggle.svg?style=svg)](https://circleci.com/gh/bsonntag/react-use-toggle)
-[![Coverage Status](https://coveralls.io/repos/github/bsonntag/react-use-toggle/badge.svg?branch=master)](https://coveralls.io/github/bsonntag/react-use-toggle?branch=master)
 
 React hook for toggle state.
 
