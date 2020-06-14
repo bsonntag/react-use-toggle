@@ -1,36 +1,29 @@
-import { fireEvent, render } from 'react-testing-library';
-import React from 'react';
+import { act, renderHook } from '@testing-library/react-hooks';
 import useToggle from '.';
 
-const Test = ({ defaultOn }) => {
-  const [on, toggle] = useToggle(defaultOn);
-
-  return (
-    <button onClick={toggle}>
-      {on ? 'on' : 'off'}
-    </button>
-  );
-};
-
 test('should return false as the initial state', () => {
-  const { container } = render(<Test />);
+  const { result } = renderHook(() => useToggle());
+  const [value] = result.current;
 
-  expect(container.firstChild.textContent).toBe('off');
+  expect(value).toBe(false);
 });
 
-test('should return specified initial state', () => {
-  const { container } = render(<Test defaultOn />);
+test('should return the specified initial state', () => {
+  const { result } = renderHook(() => useToggle(true));
+  const [value] = result.current;
 
-  expect(container.firstChild.textContent).toBe('on');
+  expect(value).toBe(true);
 });
 
-test('should update the state', () => {
-  const { container } = render(<Test />);
-  const button = container.firstChild;
+test('should update the state when the toggle function is invoked', () => {
+  const { result } = renderHook(() => useToggle());
+  const [, toggle] = result.current;
 
-  expect(button.textContent).toBe('off');
+  act(() => {
+    toggle();
+  });
 
-  fireEvent.click(button);
+  const [value] = result.current;
 
-  expect(button.textContent).toBe('on');
+  expect(value).toBe(true);
 });
