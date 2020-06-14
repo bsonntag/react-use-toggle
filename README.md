@@ -37,12 +37,7 @@ function Example() {
 
   return (
     <label>
-      <input
-        checked={checked}
-        onChange={toggle}
-        type={'checkbox'}
-      />
-
+      <input checked={checked} onChange={toggle} type={'checkbox'} />
       Are you hooked?
     </label>
   );

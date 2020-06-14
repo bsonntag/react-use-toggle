@@ -8,12 +8,8 @@ const Example = () => {
 
   return (
     <>
-      <button onClick={toggle}>
-        {on ? 'On' : 'Off'}
-      </button>
-      <button onClick={toggleCool}>
-        {cool ? 'Cool' : 'Meh'}
-      </button>
+      <button onClick={toggle}>{on ? 'On' : 'Off'}</button>
+      <button onClick={toggleCool}>{cool ? 'Cool' : 'Meh'}</button>
     </>
   );
 };
