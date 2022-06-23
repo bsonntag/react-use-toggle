@@ -3,6 +3,9 @@
 .circleci
 .eslintignore
 .eslintrc.js
+.huskyrc.js
+.lintstagedrc.js
+.prettierrc.js
 build
 coverage
 example
